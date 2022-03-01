@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="description" content="Welcome to a blog for Rayna Weeden. Here you will find all of her photography, videos, music, and more!">
+  <meta name="author" content="Rayna R. Weeden">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/icon.jpg">
+
+  <title>Pulcherrimum Quaerere | Sandbox</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Style Css -->
+  <link href="../css/main.css" rel="stylesheet">
+  <!-- Font List -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ed299dde65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav id="sideMenu" class="order-1">
+    <div id="sideMenuContent" class="container-fluid h-100">
+      <div class="row h-100">
+        <div id="sideMenuInnerContent" class="col-lg-10">
+
+          <ul class="nav flex-column h-100">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">
+                <i class="fa-solid fa-image-portrait"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="poems.html">
+                <i class="fa-solid fa-scroll"></i> Poems
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="music.html">
+                <i class="fa-solid fa-music"></i> Music
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sandbox.html">
+                <i class="fa-solid fa-box"></i> Sandbox
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div id="sideMenuSideContent" class="col-lg-2 d-flex align-items-center">
+          <div class="w-100 d-flex justify-contents-right">
+            <div class="w-100 d-block">
+              <div class="menuBar" onclick="sideNav()">
+                <div class="bar bar-1 mx-auto"></div>
+                <div class="bar bar-2 mx-auto"></div>
+                <div class="bar bar-3 mx-auto"></div>
+                <div class="bar bar-4 mx-auto"></div>
+              </div>
+              <h4 class="text-center">S<br>A<br>N<br>D<br>B<br>O<br>X</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="content">
+    <header class="masthead">
+      <div class="container-fluid h-100 d-flex align-items-center">
+        <div class="row w-100 d-flex justify-contents-center">
+          <div class="col-lg-10 mx-auto textbox">
+            <h2>My place to create!</h2>
+            <p>
+              Here are some cool things that you can check out and use.
+              I have some upcoming projects like a text-based game I want to put out.
+              Along with some links, I'll also recommend some books.
+              I hope you enjoy the content!
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <section id="passwordGenerator">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Password Generator</h2>
+            <div id="pdwCopy" class="btn-inverted col-lg-1 mx-auto"></div>
+            <label id="numberSlideTextBoxLabel"></label>
+            <input type="text" id="numberSlideTextBox" aria-labelledby="numberSlideTextBoxLabel" class="numberSlideTextBox">
+            <input type="range" id="numberSlide" min="8" max="64" value="20" class="numberslide" oninput="slideRange()" onchange="slideRange()">
+            <div id="thumb" class="mx-auto">20</div>
+          </div>
+        </div>
+        <div class="checkBox row">
+          <div class="col-lg-3 mx-auto">
+            <div id="checkMarkOne" class="checkMarkFull" aria-labelledby="checkMarkEmptyLabel1"></div>
+            <p id="checkMarkEmptyLabel1">Upper Case Letters</p>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <div id="checkMarkTwo" class="checkMarkFull" aria-labelledby="checkMarkEmptyLabel2"></div>
+            <p id="checkMarkEmptyLabel2">Lower Case Letters</p>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <div id="checkMarkThree" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel3"></div>
+            <p id="checkMarkEmptyLabel3">Numbers</p>
+          </div>
+        </div>
+        <div class="checkBox row">
+          <div class="col-lg-3 mx-auto">
+            <div id="checkMarkFour" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel4"></div>
+            <p id="checkMarkEmptyLabel4">Special characters</p>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <a data-toggle="tooltip" data-placement="bottom" title="More characters not commonly fount on a keyboard.">
+              <div id="checkMarkSeven" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel7"></div>
+              <p id="checkMarkEmptyLabel7">Extended ASCII</p>
+            </a>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <a data-toggle="tooltip" data-placement="bottom" title="Extends the range of the slider.">
+              <div id="checkMarkEight" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel8"></div>
+              <p id="checkMarkEmptyLabel8">Range Extender</p>
+            </a>
+          </div>
+        </div>
+        <div class="checkBox row">
+          <div class="col-lg-3 mx-auto">
+            <a data-toggle="tooltip" data-placement="bottom" title="Randomize the string before generation.">
+              <div id="checkMarkNine" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel9"></div>
+              <p id="checkMarkEmptyLabel9">Harden</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="base64Converter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2 id="base64Title">Base 64 Encoder</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <input type="text" id="base64EncodeTextBoxStart" placeholder="Enter text here!" class="base64TextBox">
+            <input type="text" id="base64EncodeTextBoxEnd" placeholder="End results!" class="base64TextBox">
+          </div>
+          <div class="col-lg-2 mr-auto align-self-end">
+            <div id="base64ConvertButton" class="btn-inverted text-center" onclick="base64Convertion();">
+              <h4>Convert!</h4>
+            </div>
+          </div>
+        </div>
+        <div class="checkBox row">
+          <div class="col-lg-3 mx-auto">
+            <div id="checkMarkFive" class="checkMarkFull" aria-labelledby="checkMarkEmptyLabel5"></div>
+            <p id="checkMarkEmptyLabel5">Encode</p>
+          </div>
+          <div class="col-lg-3 mx-auto">
+            <div id="checkMarkSix" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel6"></div>
+            <p id="checkMarkEmptyLabel6">Decode</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <footer>
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-12 d-flex justify-contents-center">
+                <h4 id="footerBody" class="text-center w-100"></h4>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+  </main>
+
+
+
+  <!-- Plugin JavaScript -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/main.js"></script>
+
+  <script>
+    window.onload = function() {slideRange()}
+    var today = new Date();
+    var year = today.getUTCFullYear();
+    document.getElementById('footerBody').innerHTML = "Pulcherrimum Quaerere | " + year ;
+  </script>
+
+</body>
+
+</html>

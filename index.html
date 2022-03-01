@@ -5,12 +5,12 @@
 
 
   <meta charset="utf-8">
-  <meta name="description" content="Welcome to the CV site for Rayna Weeden. Here you will find all of her photography, videos, music, and more!">
+  <meta name="description" content="Welcome to a blog for Rayna Weeden. Here you will find all of her photography, videos, music, and more!">
   <meta name="author" content="Rayna R. Weeden">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/icon.jpg">
 
-  <title>Rayna Weeden</title>
+  <title>Pulcherrimum Quaerere</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -18,76 +18,117 @@
   <link href="css/main.css" rel="stylesheet">
   <!-- Font List -->
 
-  <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ed299dde65.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <nav id="sideMenu" class="sectionOne">
+  <nav id="menuTemp" class="navbar" aria-label="First navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="#">
+        <h4>HOME</h4>
+      </a>
+
+      <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+
+        <ul class="navbar-nav me-auto mb-2">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pages/about.html">
+              <i class="fa-solid fa-image-portrait"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pages/about.html">
+              <i class="fa-solid fa-scroll"></i> Poems
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-music"></i> Music
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pages/sandbox.html">
+              <i class="fa-solid fa-box"></i> Sandbox
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <nav id="sideMenu" class="order-1">
     <div id="sideMenuContent" class="container-fluid h-100">
       <div class="row h-100">
-        <div class="col-lg-2">
-          <div>
-            <div class="menuBar" onclick="sideNav()">
-              <div class="bar bar-1 mx-auto"></div>
-              <div class="bar bar-2 mx-auto"></div>
-              <div class="bar bar-3 mx-auto"></div>
-              <div class="bar bar-4 mx-auto"></div>
+        <div id="sideMenuInnerContent" class="col-lg-10">
+
+          <ul class="nav flex-column h-100">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pages/about.html">
+                <i class="fa-solid fa-image-portrait"></i> About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pages/about.html">
+                <i class="fa-solid fa-scroll"></i> Poems
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fa-solid fa-music"></i> Music
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pages/sandbox.html">
+                <i class="fa-solid fa-box"></i> Sandbox
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+        <div id="sideMenuSideContent" class="col-lg-2 d-flex align-items-center">
+          <div class="w-100 d-flex justify-contents-right">
+            <div class="w-100 d-block">
+              <div class="menuBar" onclick="sideNav()">
+                <div class="bar bar-1 mx-auto"></div>
+                <div class="bar bar-2 mx-auto"></div>
+                <div class="bar bar-3 mx-auto"></div>
+                <div class="bar bar-4 mx-auto"></div>
+              </div>
+              <h4 class="text-center">H <br> O <br> M <br> E </h4>
             </div>
           </div>
-          <div class="pageName">
-            <h4 class="text-center">H <br> O <br> M <br> E </h4>
-          </div>
-        </div>
-        <div id="sideMenuInnerContent" class="col-lg-8">
-
-          <a class="pageName p-5" href="Pages/about.html">
-            <h5 class="text-center">A<br>B<br>O<br>U<br>T</h5>
-          </a>
-
-          <a class="pageName p-5" href="Pages/poems.html">
-            <h5 class="text-center">P<br>O<br>E<br>M<br>S</h5>
-          </a>
-
-          <a class="pageName p-5" href="Pages/music.html">
-            <h5 class="text-center">M<br>U<br>S<br>I<br>C</h5>
-          </a>
-
-          <a class="pageName p-5" href="Pages/music.html">
-            <h5 class="text-center">S<br>A<br>N<br>D<br>B<br>O<br>X</h5>
-          </a>
-
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="sectionTwo">
+  <main id="content">
     <header class="masthead">
-
+      <div class="container-fluid h-100 d-flex align-items-center">
+        <div class="row w-100 d-flex justify-contents-center">
+          <div class="col-lg-10 mx-auto textbox">
+            <h2>Welcome to my blog!</h2>
+            <p>
+              Here you'll find everything I love and do. My hobbies include photography, music production, poetry, and anything that comes to my mind.
+              Have fun!
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="content">
-
-    </main>
-  </div>
-
-  <!--
-
- <footer>
-   <div class="container-fluid h-100">
-     <div class="row h-100 d-flex align-items-center">
-       <div class="col-lg-10 mx-auto d-flex justify-content-center">
-         <h4 id="footerBody"></h4>
-       </div>
-     </div>
-   </div>
- </footer>
-
- -->
+  </main>
 
 
 
@@ -95,14 +136,15 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 
+
   <!-- Custom scripts for this template -->
   <script src="js/main.js"></script>
 
-  <!--<script>
-  var today = new Date();
-  var year = today.getUTCFullYear();
-  document.getElementById('footerBody').innerHTML = "Pulcherrimum Quaerere | " + year ;
-</script>-->
+  <script>
+    var today = new Date();
+    var year = today.getUTCFullYear();
+    document.getElementById('footerBody').innerHTML = "Pulcherrimum Quaerere | " + year;
+  </script>
 
 </body>
 
