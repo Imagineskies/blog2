@@ -26,6 +26,51 @@
 
 <body>
 
+  <nav id="menuTemp" class="navbar" aria-label="First navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menuBar" onclick="sideNav()">
+          <div class="bar bar-1 mx-auto"></div>
+          <div class="bar bar-2 mx-auto"></div>
+          <div class="bar bar-3 mx-auto"></div>
+          <div class="bar bar-4 mx-auto"></div>
+        </div>
+      </button>
+      <a class="navbar-brand" href="#">
+        <h4 class="text-left">Music</h4>
+      </a>
+
+      <div class="navbar-collapse collapse" id="topNavbar" style="">
+
+        <ul class="navbar-nav me-auto mb-2">
+
+          <li class="nav-item">
+            <a class="nav-link active w-100 text-left" aria-current="page" href="../index.html">
+              <i class="fa-solid fa-image-portrait"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active w-100 text-left" href="about.html">
+              <i class="fa-solid fa-scroll"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active w-100 text-left" href="poems.html">
+              <i class="fa-solid fa-music"></i> Poems
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active w-100 text-left" href="sandbox.html">
+              <i class="fa-solid fa-box"></i> Sandbox
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
   <nav id="sideMenu" class="order-1">
     <div id="sideMenuContent" class="container-fluid h-100">
       <div class="row h-100">
@@ -77,27 +122,42 @@
       <div class="container-fluid h-100 d-flex align-items-center">
         <div class="row w-100 d-flex justify-contents-center">
           <div class="col-lg-10 mx-auto textbox">
-          <h2>My name is Rayna...</h2>
-          <p>
-
-             I'm a chill, open-minded girl, which is just a place
-             where I can talk about things I find interesting.
-            So if you want to stay, stay.
-            If this isn't your thing, no pressure, no hard feelings.
-            So to not give away too much, I'm 18, trans, and an artist.
-            I have tons of poems that I think you'd like (or not like).
-            Some of them are dark, and some are uplifting.
-            I use it to help me cope, so anything I write about it just like a rant.
-            Me spilling myself. Some pictures that I have aren't mine, and some are.
-            The flowers you see at the top, I didn't take that picture, but I
-            have some that I did take. Every now and then, I'll edit a video so you might see some of that and if
-            you know any music, not all of it is mine, but I'll let you know when it is!!!
-
-          </p>
+            <h2>I love listening to music.</h2>
+          <p> It's powerful, amazing, and I use it a
+            lot to <br> express myself depending on the mood I feel. This is the
+             music I listen to every second of my life.
+           </p>
           </div>
         </div>
       </div>
     </header>
+
+    <section id="music">
+      <div class="container">
+        <div class="row">
+          <div  class="col-lg-5 musicOnRepeat mx-auto">
+            <h2>On Repeat</h2>
+            <p>The music I can't get enough of.</p>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1EpnE4zZCcFqQY" allow="encrypted-media"></iframe>
+          </div>
+          <div class="col-lg-5 musicChill mx-auto">
+            <h2>Chill</h2>
+            <p>Something to help code or take notes.</p>
+            <iframe src="https://open.spotify.com/embed/playlist/2YDPa07TZVPlNTUfQQwPlo" allow="encrypted-media"></iframe>
+          </div>
+          <div class="col-lg-5 musicRap mx-auto">
+            <h2>Rap</h2>
+            <p>When I'm craving fast tracks and hot bars.</p>
+            <iframe src="https://open.spotify.com/embed/playlist/2eAvc8XKU3QYQCqFvdghJP" allow="encrypted-media"></iframe>
+          </div>
+          <div class="col-lg-5 musicEDM mx-auto">
+            <h2>EDM</h2>
+            <p>From gaming to joging, here is a playlist for everything.</p>
+            <iframe src="https://open.spotify.com/embed/playlist/4gS0ez2guYzg5tQWFxSGaL" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
