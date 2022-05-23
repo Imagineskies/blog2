@@ -28,11 +28,11 @@ console.log(sideNavStatus)
 // Constants
 const sideMenu = document.getElementById("sideMenu");
 const sideMenuInnerContent = document.getElementById("sideMenuInnerContent");
-const bar = document.getElementByClassName('menuBar');
-const barOne = document.getElementByClassName('bar-1');
-const barTwo = document.getElementByClassName('bar-2');
-const barThree = document.getElementByClassName('bar-3');
-const barFour = document.getElementByClassName('bar-4');
+const bar = document.querySelector('.menuBar');
+const barOne = document.querySelector('.bar-1');
+const barTwo = document.querySelector('.bar-2');
+const barThree = document.querySelector('.bar-3');
+const barFour = document.querySelector('.bar-4');
 const checkMarkOne = document.querySelector('#checkMarkOne');
 const checkMarkTwo = document.querySelector('#checkMarkTwo');
 const checkMarkThree = document.querySelector('#checkMarkThree');
